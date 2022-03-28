@@ -1,0 +1,104 @@
+/*Modelo de caja tradicional*/
+* { /*Selector universal o regla CSS general*/
+    margin: 0px;
+    padding: 0px;/*Espacio entre contenido y borde. Margen interior*/
+}
+
+/*Agregando estilos para los elementos <h1> y <h2>*/
+h1 {
+    font: bold 20px verdana, sans-serif;
+}
+
+h2 {
+    font: bold 14px verdana, sans-serif;
+    /*font: bold 20px verdana, sans-serif;*/
+}
+
+/*Regla por defecto para elementos estructurales de HTML5*/
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+
+#agrupar {
+    width: 960px;/*Ancho de la caja*/
+    margin: 15px auto;/*15px para margen superior e inferior y automático para der e izq*/
+    text-align: left;/*Centrado de todos los elementos dentro del cuerpo*/
+}
+
+#cabecera {
+    background: #FFFBB9;/*Color fondo de cabecera*/
+    border: 1px solid #999999;/*Grosor del borde solido y color*/
+    padding: 20px;/*Espacio entre contenido y borde. Margen interior*/
+}
+
+#menu {
+    background: #CCCCCC;
+    padding: 5px 15px;
+}
+
+#menu li {
+    display: inline-block;/*Representaciohn cajas inline*/
+    list-style: none;/*Elimina gráfico generado en algunos navegadores*/
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+}
+
+#seccion {
+    float: left;
+    width: 660px;
+    margin: 20px;
+}
+
+#columna {
+    float: left;/*Esta propiedad mueve la caja al es pacio dsiponible según su valor*/
+    width: 220px;/*Asigna un tamaño horizontal*/
+    margin: 20px 0px;/*Margen de los lados al elemento*/
+    padding: 20px;/*Margen interno*/
+    background: #CCCCCC;
+}
+
+#pie {
+    clear: both;/*Devuelve al documento su flujo normal, pocisionando footer bajo el último elemento*/
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #999999;
+}
+
+article {
+    background: #FFFBCC;
+    border: 1 px solid #999999;
+    padding: 20px;
+    margin-bottom: 15px;/*Marden inferior para separar un elemento article de otro vertical*/
+}
+
+article footer {
+    text-align: right;
+}
+
+time {
+    color: #999999;
+}
+
+figcaption {
+    font: italic 14px verdana, sans-serif;
+}
+
+div {
+    width: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    /*-chrome-sizing: border-box;*/
+    box-sizing: border-box;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Desarrollo Web 2.0</title>
+    <link rel="stylesheet" href="styles_2.css"> 
+</head>
+<body><!--
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+    -->
+    <!--<section id="principal">-->
+        <div id="sidebar" class="sidebar">
+            <a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+            <ul class="menu">
+                <!--<li><a href="#">Vienvenido</a></li>-->
+                <li><a href="micodigo.html">Caja tradicional</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="https://www.youtube.com/">youtube</a></li>
+            </ul>
+    </div>
+        <div id="contenido">
+            <p><img src="logo.png" alt="campusMVP" style="border-width: 0px"/></p>
+            <header id="principal">
+                <span id="titulo">Desarrollo Web 2.0</span>
+            </header>
+            <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">Desplegar menú</a>
+            <a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()">Menú lateral</a>
+            Esta página presenta un menú lateral, que contiene un modelo de caja tradicional y reproductores de audio y video programados en Javascript. En Home se tiene el header con logo, el nombre de la app dinámica, la presente breve descripcion y el footer de la web.
+            <footer id="pie">
+                Derechos Reservados &copy; 2020-2021
+            </footer>
+        </div>
+    <!--</section>-->
+<script>
+function mostrar() {
+    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("contenido").style.marginLeft = "300px";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+}
+
+function ocultar() {
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("contenido").style.marginLeft = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+}
+/*
+Window.onload = function(){
+    var contenedor = document.getElementById('contenedor_carga');
+
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0';
+    https://www.youtube.com/watch?v=nq0vAO6SDlI
+
+    https://jorgesanchez.net/manuales/html/enlaces-html.html
+}
+*/
+</script>
+     
+</body>
+</html> 

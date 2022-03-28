@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Reproductor de Video</title>
+  <link rel="stylesheet" href="reproductor.css">
+  <script src="reproductor.js"></script>
+</head>
+<body>
+  <header id="principal">
+    <span id="titulo">Reproductor de Video</span>
+</header>
+  <section id="reproductor">
+    
+    <video id="medio" width="720" height="400">
+      <source src="trailer.mp4">
+    </video>
+    <nav>
+      <div id="botones">
+        <input type="button" id="reproducir" value=">">
+        <input type="button" id="silenciar" value="Mudo">
+      </div>
+      <div id="barra">
+        <div id="progreso"></div>
+      </div>
+      <div id="control">
+        <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.6">
+      </div>
+      <div class="clear"></div>
+    </nav>
+  </section>
+</body>
+</html>
+
+<!--http://www.formasterminds.com/gran_libro_de_html5_2da_edicion_revisada/resources.php-->
+<!--http://www.formasterminds.com/html5_para_masterminds_1ra_edicion/examples.php-->
+<!--pag 133 métodos-->

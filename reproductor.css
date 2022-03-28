@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+  }
+  header, section, footer, aside, nav, article, figure, figcaption, hgroup{
+    display: block;
+  }
+  #reproductor{
+    width: 720px;
+    margin: 10px auto;
+    padding: 10px 5px 5px 5px;
+    background: #797373;
+    border: 1px solid #666666;
+    border-radius: 10px;
+  }
+  #reproducir, #silenciar{
+    padding: 2px 10px;
+    width: 65px;
+    border: 1px solid #000000;
+    background: #DDDDDD;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  nav{
+    margin: 5px 0px;
+  }
+  #botones{
+    float: left;
+    width: 135px;
+    height: 20px;
+    padding-left: 5px;
+  }
+  #barra{
+    float: left;
+    width: 400px;
+    height: 16px;
+    padding: 2px;
+    margin: 2px 5px;
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+  }
+  #progreso{
+    width: 0px;
+    height: 16px;
+    background: rgba(0,0,150,.2);
+  }
+  .clear{
+    clear: both;
+  }
+
+  #principal {
+    display: block;
+    width: 400px;
+    margin: 2px auto;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: #DDDDDD;
+
+    -moz-border-radius: 30px 50px 30px 50px;
+    -webkit-border-radius: 30px 50px 30px 50px;
+    border-radius: 30px 50px 30px 50px;
+
+    -moz-box-shadow: rgb(150,150,150) -15px -5px;
+    -webkit-box-shadow: rgb(150,150,150) -15px -5px;
+    box-shadow: rgb(150,150,150) -15px -5px;
+
+    background: -webkit-radial-gradient(top, ellipse, #FFFFFF 50%, #006699 90%);
+    background: -moz-radial-gradient(top, ellipse, #FFFFFF 50%, #006699 90%);
+
+    -moz-transition: -moz-transform 0.5s ease-in-out 0.5s;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0.5s;
+    transition: -webkit-transform 0.5s ease-in-out 0.5s;
+    }
+#principal:hover{
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    }
+
+  #titulo {
+    font: bold 60px MiNuevaFuente, verdana, sans-serif;
+    text-shadow: rgb(0,0,150) 3px 3px 5px;
+    text-align: center;/*Centrado de todos los elementos dentro del cuerpo*/
+    }
+@font-face {
+    font-family: 'MiNuevaFuente';
+    src: url('forelle.ttf');
+    }

@@ -1,0 +1,141 @@
+body {
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+    -moz-border-radius: 30px 50px;
+    -webkit-border-radius: 30px 50px;
+    border-radius: 30px 50px;
+
+    background: -webkit-linear-gradient(bottom, #FFFFFF, #006699);
+    background: -moz-linear-gradient(bottom, #FFFFFF, #006699);
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+    font: bold 45px MiNuevaFuente, verdana, sans-serif;
+    text-shadow: rgb(2, 2, 15) 3px 3px 5px;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:rgb(70, 47, 163);
+    font-size:180%;
+    font-weight:normal;
+    text-align: center;/*Centrado de todos los elementos dentro del cuerpo*/
+}
+#principal {
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: #DDDDDD;
+
+    -moz-border-radius: 30px 30px;
+    -webkit-border-radius: 30px 30px;
+    border-radius: 30px 30px;
+
+    background: -webkit-radial-gradient(left, ellipse, #FFFFFF 50%, #006699 90%);
+    background: -moz-radial-gradient(left, ellipse, #FFFFFF 50%, #006699 90%);
+
+    -moz-box-shadow: rgb(150,150,150) 10px 10px;
+    -webkit-box-shadow: rgb(150,150,150) 10px 10px;
+    box-shadow: rgb(150,150,150) 10px 10px;
+
+    -moz-transition: -moz-transform 0.5s ease-in-out 0.5s;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0.5s;
+    transition: -webkit-transform 0.5s ease-in-out 0.5s;
+    }
+#principal:hover{
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    }
+#titulo, .abrir-cerrar {
+    font: bold 60px MiNuevaFuente, verdana, sans-serif;
+    text-shadow: rgb(0,0,150) 3px 3px 5px;
+    text-align: center;/*Centrado de todos los elementos dentro del cuerpo*/
+    }
+@font-face {
+    font-family: 'MiNuevaFuente';
+    src: url('forelle.ttf');
+    }
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #04090e;
+    font-size:2rem;   
+}
+    
+#cerrar {
+    display:none;
+}
+
+#pie {
+    font: bold 30px MiNuevaFuente, verdana, sans-serif;
+    clear: both;/*Devuelve al documento su flujo normal, pocisionando footer bajo el último elemento*/
+    text-align: center;
+    padding: 20x;
+    border-top: 2px solid #999999;
+}
+
+img{
+    display:block;
+    margin:auto;
+    }
